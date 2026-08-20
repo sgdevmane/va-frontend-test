@@ -1,0 +1,59 @@
+.emptyContainer {
+  background-color: var(--token-color-colour-surface-elevation-0);
+  border: 1px dashed var(--token-color-colour-border-accessible);
+  border-radius: 8px;
+  padding: 48px 24px;
+  text-align: center;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconCircle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: var(--token-color-colour-background-secondary);
+  color: var(--token-color-colour-brand-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--token-color-colour-text-primary);
+  margin: 0 0 8px 0;
+}
+
+.message {
+  font-size: 1.5rem;
+  color: var(--token-color-colour-text-secondary);
+  max-width: 480px;
+  line-height: 1.5;
+  margin: 0 0 24px 0;
+}
+
+.resetButton {
+  background-color: var(--token-color-colour-brand-red);
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.resetButton:hover {
+  background-color: #b80428;
+}
+
+.resetButton:focus-visible {
+  outline: 3px solid var(--token-color-colour-brand-purple);
+  outline-offset: 2px;
+}

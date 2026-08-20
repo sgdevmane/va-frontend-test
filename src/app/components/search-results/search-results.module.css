@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 0 16px;
+}
+
+.searchSummaryBanner {
+  background-color: var(--token-color-colour-background-secondary);
+  border: 1px solid var(--token-color-colour-border-minimal);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.breadcrumb {
+  margin-bottom: 8px;
+}
+
+.backLink {
+  color: var(--token-color-colour-brand-red);
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.searchTitle {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: var(--token-color-colour-text-primary);
+  margin: 0 0 12px 0;
+}
+
+.summaryTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background-color: var(--token-color-colour-surface-elevation-0);
+  border: 1px solid var(--token-color-colour-border-minimal);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  color: var(--token-color-colour-text-secondary);
+}
+
+.tag strong {
+  color: var(--token-color-colour-text-primary);
+  margin-right: 4px;
+}
+
+/* Two column grid layout */
+.layoutGrid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.resultsMain {
+  min-width: 0; /* Prevents CSS grid blowout */
+}
+
+.holidayList {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 860px) {
+  .layoutGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .searchTitle {
+    font-size: 2.2rem;
+  }
+
+  .searchSummaryBanner {
+    padding: 16px;
+  }
+}

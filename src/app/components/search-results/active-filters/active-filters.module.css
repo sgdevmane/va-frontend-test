@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 8px 0;
+}
+
+.label {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--token-color-colour-text-secondary);
+}
+
+.pillsList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--token-color-colour-background-secondary);
+  border: 1px solid var(--token-color-colour-border-decorative);
+  color: var(--token-color-colour-text-primary);
+  font-size: 1.3rem;
+  padding: 4px 10px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pill:hover {
+  background-color: #fee;
+  border-color: var(--token-color-colour-brand-red);
+  color: var(--token-color-colour-brand-red);
+}
+
+.pill:focus-visible {
+  outline: 2px solid var(--token-color-colour-brand-red);
+}
+
+.closeIcon {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--token-color-colour-text-secondary);
+}
+
+.pill:hover .closeIcon {
+  color: var(--token-color-colour-brand-red);
+}
+
+.clearAllButton {
+  background: none;
+  border: none;
+  color: var(--token-color-colour-brand-red);
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 8px;
+  margin-left: 4px;
+}
+
+.clearAllButton:hover {
+  text-decoration: underline;
+}
+
+.clearAllButton:focus-visible {
+  outline: 2px solid var(--token-color-colour-brand-red);
+}

@@ -1,0 +1,304 @@
+.card {
+  display: grid;
+  grid-template-columns: 280px 1fr 240px;
+  background-color: var(--token-color-colour-surface-elevation-0);
+  border: 1px solid var(--token-color-colour-border-minimal);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* 1. Media Area */
+.mediaContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+}
+
+.mediaBadges {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 2;
+}
+
+.boardBadge {
+  background-color: rgba(3, 12, 22, 0.85);
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  text-transform: capitalize;
+}
+
+.vRatingBadge {
+  background-color: var(--token-color-colour-brand-purple);
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+/* 2. Details Area */
+.detailsContainer {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--token-color-colour-border-minimal);
+}
+
+.locationTag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--token-color-colour-text-secondary);
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+}
+
+.locationIcon {
+  color: var(--token-color-colour-brand-red);
+}
+
+.hotelName {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--token-color-colour-text-primary);
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+  /* Prevent excessive text overflow breaking layout */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.starRating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #f5a623;
+}
+
+.starIcon {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.starRatingText {
+  color: var(--token-color-colour-text-secondary);
+  font-size: 1.2rem;
+  margin-left: 4px;
+}
+
+.unratedBadge {
+  font-size: 1.2rem;
+  color: var(--token-color-colour-text-secondary);
+  background-color: var(--token-color-colour-background-secondary);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.propertyTypeTag {
+  font-size: 1.2rem;
+  color: var(--token-color-colour-text-secondary);
+  background-color: var(--token-color-colour-background-secondary);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.description {
+  font-size: 1.4rem;
+  color: var(--token-color-colour-text-secondary);
+  line-height: 1.5;
+  margin: 0 0 14px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.highlightsList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.highlightItem {
+  font-size: 1.3rem;
+  color: var(--token-color-colour-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.checkIcon {
+  color: var(--token-color-colour-text-success);
+  font-weight: bold;
+}
+
+.facilitiesRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.facilityBadge {
+  font-size: 1.2rem;
+  background-color: var(--token-color-colour-background-secondary);
+  color: var(--token-color-colour-text-primary);
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--token-color-colour-border-minimal);
+}
+
+.moreFacilities {
+  font-size: 1.2rem;
+  color: var(--token-color-colour-text-secondary);
+  padding: 4px 6px;
+}
+
+/* 3. Pricing & CTA */
+.pricingContainer {
+  padding: 20px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tripSummary {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 1.2rem;
+  color: var(--token-color-colour-text-secondary);
+  margin-bottom: 12px;
+}
+
+.durationBadge {
+  font-weight: 600;
+  color: var(--token-color-colour-text-primary);
+}
+
+.rewardsBox {
+  background-color: #f6eef8;
+  border: 1px solid #ebd4ef;
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-bottom: 14px;
+}
+
+.rewardsTitle {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--token-color-colour-brand-purple);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.pointsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 1.15rem;
+  color: var(--token-color-colour-brand-purple);
+}
+
+.priceBlock {
+  margin-top: auto;
+  margin-bottom: 14px;
+  text-align: right;
+}
+
+.priceLabel {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--token-color-colour-text-secondary);
+}
+
+.pricePerPerson {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: var(--token-color-colour-brand-red);
+  line-height: 1.1;
+  display: inline-block;
+}
+
+.perPersonSubtext {
+  font-size: 1.2rem;
+  color: var(--token-color-colour-text-secondary);
+  margin-left: 4px;
+}
+
+.totalPriceWrapper {
+  font-size: 1.2rem;
+  color: var(--token-color-colour-text-secondary);
+  margin-top: 2px;
+}
+
+.ctaButton {
+  background-color: var(--token-color-colour-brand-red);
+  color: #ffffff;
+  border: none;
+  padding: 12px 16px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.ctaButton:hover {
+  background-color: #b80428;
+}
+
+.ctaButton:focus-visible {
+  outline: 3px solid var(--token-color-colour-brand-purple);
+  outline-offset: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .detailsContainer {
+    border-right: none;
+    border-bottom: 1px solid var(--token-color-colour-border-minimal);
+  }
+
+  .priceBlock {
+    text-align: left;
+  }
+}

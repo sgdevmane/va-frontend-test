@@ -1,0 +1,85 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  background-color: var(--token-color-colour-surface-elevation-0);
+  border: 1px solid var(--token-color-colour-border-minimal);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+
+.resultsCount {
+  display: flex;
+  align-items: center;
+}
+
+.countText {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--token-color-colour-text-primary);
+  margin: 0;
+}
+
+.sortWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sortLabel {
+  font-size: 1.4rem;
+  color: var(--token-color-colour-text-secondary);
+  font-weight: 500;
+}
+
+.selectContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.sortSelect {
+  appearance: none;
+  background-color: var(--token-color-colour-surface-elevation-0);
+  border: 1px solid var(--token-color-colour-border-accessible);
+  color: var(--token-color-colour-text-primary);
+  padding: 8px 36px 8px 12px;
+  font-size: 1.4rem;
+  font-family: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 180px;
+}
+
+.sortSelect:focus-visible {
+  outline: 2px solid var(--token-color-colour-brand-red);
+  border-color: var(--token-color-colour-brand-red);
+}
+
+.selectArrow {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  color: var(--token-color-colour-text-secondary);
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sortWrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .sortSelect {
+    flex-grow: 1;
+  }
+}
